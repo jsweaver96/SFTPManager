@@ -1,0 +1,1 @@
+I:\Programming\Personal\Java\SFTPManager\SFTPManagerSln\SFTPManager\obj\Debug\SFTPManager.csprojResolveAssemblyReference.cache

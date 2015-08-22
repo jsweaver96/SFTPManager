@@ -1,0 +1,30 @@
+﻿@using SFTPManager.Models
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model LoginModel 
+
+<body>
+    <h2>Login</h2>
+
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        <div id="main">
+            <div id="usrGroup">
+                <label id="usrLabel">Username : </label>
+                @Html.TextBoxFor(m => m.Username)
+            </div>
+            <div id="pwdGroup">
+                <label id="pwdLabel">Password : </label>
+                @Html.PasswordFor(m => m.Password)
+            </div>
+            <div id="btnGroup">
+                <input id="loginBtn" type="submit" value="Login" />
+                <input id="resetBtn" type="button" value="Reset Password" />
+            </div>
+        </div>
+    }
+</body>
+
